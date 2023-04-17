@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -22,15 +23,19 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="learn/next">
+            <div className={styles.card}>
+              <h2>Learn NextJS &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </div>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="learn/react">
+            <div className={styles.card}>
+              <h2>React &rarr;</h2>
+              <p>Learn everuthing about React and JSX with this quick guide.</p>
+            </div>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
@@ -65,5 +70,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
