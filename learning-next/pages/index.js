@@ -13,9 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>Welcome to Elearning Plataform</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -32,7 +30,21 @@ export default function Home() {
 
           <Link href="learn/react">
             <div className={styles.card}>
-              <h2>React &rarr;</h2>
+              <h2>Learn React &rarr;</h2>
+              <p>Learn everuthing about React and JSX with this quick guide.</p>
+            </div>
+          </Link>
+
+          <Link href="learn/angular">
+            <div className={styles.card}>
+              <h2>Learn Angular &rarr;</h2>
+              <p>Learn everuthing about React and JSX with this quick guide.</p>
+            </div>
+          </Link>
+
+          <Link href="learn/vue">
+            <div className={styles.card}>
+              <h2>Learn Vue &rarr;</h2>
               <p>Learn everuthing about React and JSX with this quick guide.</p>
             </div>
           </Link>
