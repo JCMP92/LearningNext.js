@@ -5,5 +5,10 @@ export default function Learn() {
   const router = useRouter();
   const { name } = router.query; //name is our parameter
   const topic = topics.find((topic) => topic.id === name);
-  return <h1>Welcome, Are you ready to Learn {topic.id} ?</h1>;
+  return (
+    <>
+      <h1>Welcome, Are you ready to Learn {topic.id} ?</h1>
+      <p>{topic.about}</p>
+    </>
+  );
 }
